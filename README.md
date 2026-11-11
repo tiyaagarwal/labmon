@@ -256,6 +256,8 @@ this repository.
   - `influx.py` — shared InfluxDB client configuration
   - `writer.py` — queue-backed writer decoupling producers from InfluxDB I/O latency
   - `calibration.py` — turns raw ADC counts into dimensioned physical quantities
+  - `gate.py` — stops recording a channel while its instrument is off, instead of logging noise
+  - `logs.py` — formats log records as logfmt so a collector can read them as fields
   - `sensors/` — sensor scripts (simulated, boards over serial, and instruments behind a vendor API)
 - `templates/` — copyable starting points for sensors labmon does not ship
 - `firmware/` — reference Arduino sketches for boards labmon reads
